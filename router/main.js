@@ -1,8 +1,8 @@
 module.exports = function(app)
 {
-   app.get('
-   let randomStr = Math.random().toString(36).substring(2, 12);
-   console.log(randomStr);' , function(req,res))   
+   app.get('/랜덤코드 주소', function(req,res){
+      res.render('랜덤코드.html')
+   })
 
 
      app.get('/',function(req,res){
