@@ -1,6 +1,7 @@
 var express = require('express');
+var fs = require('fs');
 var app = express();
-var router = require('./router/main')(app);
+var router = require('./router/main')(app, fs);
 
 app.set('views', __dirname + '/view'); //html 주소
 app.set('view engine', 'ejs'); 
